@@ -1,0 +1,255 @@
+/* --------------------------------
+Logo
+-------------------------------- */
+#logo {
+  z-index: 99;
+  height: 170px;
+  width: 210px;
+  position: absolute;
+  left: 28px;
+  margin-left: 0px;
+  top: 0;
+}
+@include MQ(L) {
+  #logo {
+    z-index: 99;
+    height: 170px;
+    width: 210px;
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    img {
+
+    }
+  }
+}
+/* --------------------------------
+Header
+-------------------------------- */
+header {
+  position: relative;
+
+  h1 {
+    position: relative;
+    font-size: 1.4rem;
+    color: $white;
+    font-weight: bold;
+    display: block;
+    padding-left: 40%;
+    padding-right: 10%;
+    padding-top: 14px;
+    text-decoration: underline;
+    line-height: 1.4;
+  }
+
+  h2 {
+    position: relative;
+    font-size: 2.2rem;
+    max-width: 370px;
+    color: $white;
+    font-weight: bold;
+    display: block;
+    padding-left: 28px;
+    padding-right: 10%;
+    padding-top: 14px;
+    text-decoration: underline;
+    line-height: 1.4;
+    margin-top: 100px;
+  }
+  @include MQ(M) {
+    h1 {
+      font-size: 1.6rem;
+      position: absolute;
+      font-weight: bold;
+      left: auto;
+      width: 250px;
+      margin: 160px 10% 0 10%;
+      padding: 0;
+
+    }
+    h2 {
+      color: $white;
+      font-size: 2.6rem;
+      position: absolute;
+      font-weight: bold;
+      left: auto;
+      width: 200px;
+      margin: 300px 10% 0 10%;
+      padding: 0;
+    }
+  }
+
+  @include MQ(L) {
+    h1 {
+      font-size: 1.6rem;
+      position: absolute;
+      font-weight: bold;
+      left: 50%;
+      width: 250px;
+      margin-left:-500px;
+      margin-top: 300px;
+      padding: 0;
+
+    }
+    h2 {
+      color: $white;
+      font-size: 2.6rem;
+      position: absolute;
+      font-weight: bold;
+      left: 50%;
+      width: 200px;
+      margin-left:-420px;
+      margin-top: 600px;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width : 420px)  {
+    h1, h2 {
+      position: relative;
+      left: auto;
+      margin: 10px;
+      width: 100%;
+      padding: 0;
+    }
+    h1 {
+      margin-top: 200px;
+    }
+  }
+}
+/* --------------------------------
+Band Navigation
+-------------------------------- */
+#bandinfo {
+  position: absolute;
+  bottom: 100px;
+  font-size: 1.2rem;
+  margin-left: 28px;
+  padding-bottom: 28px;
+  text-align: left;
+  article {
+    width: 200px;
+  }
+  a {
+    line-height: 5em;
+  }
+}
+@include MQ(M) {
+  #bandinfo {
+    font-size: 1.6rem;
+    position: absolute;
+    font-weight: bold;
+    width: 230px;
+    bottom: auto;
+    right: 0;
+    margin: 270px 00% 0 10%;
+    a {
+      line-height: 1em;
+    }
+  }
+
+}
+@media screen and (max-width : 420px)  {
+  #bandinfo {
+    position: relative;
+    left: auto;
+    margin: 10px;
+    width: 100%;
+    padding: 0;
+  }
+}
+@include MQ(L) {
+  #bandinfo {
+    font-size: 1.6rem;
+    position: absolute;
+    font-weight: bold;
+    left: 50%;
+    width: 250px;
+    bottom: auto;
+    margin-left: 220px;
+    margin-top: 300px;
+    a {
+      line-height: 1em;
+    }
+  }
+}
+
+/* --------------------------------
+Footer
+-------------------------------- */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: #000;
+  z-index: 100;
+  color: #fff;
+
+  ul {
+    float: right;
+    li {
+      float: left;
+    }
+  }
+  a {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #fff;
+    padding: 30px 25px 0;
+    display: block;
+    height: 100%;
+    strong {
+      display: block;
+    }
+    span {
+      color: #ccc;
+    }
+  }
+  span#copyright {
+    float: left;
+    padding-top: 50px;
+    color: #ddd;
+  }
+}
+
+@include MQ(M) {
+  footer {
+    font-size: 0.9em;
+    a {
+      padding: 30px 30px 0px;
+    }
+  }
+}
+@include MQ(M) {
+  footer {
+    font-size: 0.9em;
+    a {
+      padding: 30px 50px 0;
+    }
+  }
+}
+@media screen and (max-width : 420px)  {
+  footer {
+    position: relative;
+    left: auto;
+    width: 100%;
+    height: auto;
+    padding: 14px;
+    bottom: 0;
+    span#copyright {
+      padding: 0;
+      padding: 14px;
+    }
+    a {
+      padding: 14px;
+    }
+    ul {
+      li {
+        display: list-item;
+        float: none;
+      }
+    }
+  }
+}

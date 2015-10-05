@@ -1,0 +1,68 @@
+// breakpoints
+
+$S:     320px;
+$M:     780px;
+$L:     1170px;
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+    @media only screen and (min-width: $S) { @content; }
+  }
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) { @content; }
+  }
+}
+
+// super light grid - it works with the .cd-container class inside style.scss
+
+@mixin column($percentage, $float-direction:left) {
+  width: 100% * $percentage;
+  float: $float-direction;
+}
+
+/* --------------------------------
+Modules - reusable parts of our design
+-------------------------------- */
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: $M;
+  margin: 0 auto;
+}
+.cd-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.center-text {
+  text-align: center;
+}
+.s {
+  padding: 3em 5%;
+}
+.m {
+  @include MQ(M) {
+    .cd-modal-content22 {
+      padding: 4em 10%;
+    }
+  }
+}
+
+.l {
+  @include MQ(L) {
+    .cd-modal-content222 {
+      padding: 6em 20%;
+    }
+
+    p {
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+  }
+}

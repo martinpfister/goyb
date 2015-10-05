@@ -1,0 +1,89 @@
+.band-media {
+  ul {
+    margin-top: 14px;
+    a {
+      color: #000;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+}
+.band-content {
+  header {
+    position: relative;
+    span {
+      position: relative;
+      font-size: 0.7em;
+      font-weight: 500;
+      vertical-align: top;
+    }
+    h1 {
+      position: relative;
+      font-size: 2.4rem;
+      color: $black;
+      font-weight: bold;
+      display: inline-block;
+      left: auto;
+      width: auto;
+      margin: 0;
+    }
+    @include MQ(L) {
+      h1 {
+        font-size: 3.2rem;
+        font-weight: bold;
+      }
+    }
+    h2 {
+      position: relative;
+      display: block;
+      margin: 3px 0 0 0;
+      font-weight: 300;
+      left: auto;
+      color: $black;
+      font-size: 1em;
+      width: auto;
+      padding-bottom: 1.4em;
+      border-bottom: 1px solid $black;
+    }
+  }
+}
+
+@include MQ(M) {
+  .band-media {
+    float: left;
+    width: 210px;
+    margin-top: 140px;
+  }
+  .band-content {
+    position: relative;
+    float: left;
+    width: 550px;
+    height: 100%;
+    padding: 140px 0px 100px 110px;
+    /*
+    padding-right: 10px;
+    margin-left: 110px;
+    margin-top: 140px;
+    */
+    overflow: hidden;
+    .scrollbox {
+      max-height: 100%;
+      overflow: auto;
+    }
+    .content {
+      padding-right: 10px;
+    }
+  }
+}
+
+.cd-section .concert-start {
+  padding: 1.4em 0;
+  border-bottom: 1px dashed $black;
+  p {
+    font-size: 1.2em;
+    margin: 0px;
+  }
+  strong {
+    font-weight: 600;
+  }
+}
