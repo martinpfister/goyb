@@ -83,4 +83,11 @@ jQuery(document).ready(function($){
 		//if browser doesn't support transitions...
 		if(section.parents('.no-csstransitions').length > 0 ) animateLayer(section.find('.cd-modal-bg'), 1, false);
 	}
+
+	function toggleNavigation (event) {
+		event.preventDefault();
+		$('#navigation').toggleClass('active');
+	}
+
+	$(document).on('click', '[data-toggle-navigation]', toggleNavigation);
 });
