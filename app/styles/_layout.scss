@@ -111,7 +111,7 @@ header {
       left: auto;
       margin: 10px;
       width: 100%;
-      padding: 0;
+      padding: 28px 14px;
     }
     h1 {
       margin-top: 200px;
@@ -156,7 +156,8 @@ Band Navigation
     left: auto;
     margin: 10px;
     width: 100%;
-    padding: 0;
+    padding: 28px 14px;
+    bottom: 0;
   }
 }
 @include MQ(L) {
@@ -201,6 +202,7 @@ footer {
     display: block;
     height: 100%;
     strong {
+      font-weight: bold;
       display: block;
     }
     span {
@@ -211,6 +213,7 @@ footer {
     float: left;
     padding-top: 50px;
     color: #ddd;
+    line-height: 1.4;
   }
 }
 
@@ -218,14 +221,16 @@ footer {
   footer {
     font-size: 0.9em;
     a {
+      line-height: 1.4;
       padding: 30px 30px 0px;
     }
   }
 }
-@include MQ(M) {
+@include MQ(L) {
   footer {
-    font-size: 0.9em;
+    font-size: 1.0em;
     a {
+      line-height: 1.4;
       padding: 30px 50px 0;
     }
   }

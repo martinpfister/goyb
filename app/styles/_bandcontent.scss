@@ -1,0 +1,134 @@
+.band-media {
+  padding-bottom: 100px;
+  img {
+    margin-left: 5%;
+    margin-right: 10%;
+    float: left;
+    max-height: 150px;
+  }
+  iframe {
+    width: 40%;
+    margin-right: 5%;
+    height: 150px;
+    float: right;
+  }
+  ul {
+    clear: both;
+    margin-top: 14px;
+    margin-left: 5%;
+    a {
+      color: #000;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+}
+@include MQ(M) {
+  .band-media {
+    margin-top: 140px;
+    padding-bottom: 0px;
+    width: 210px;
+
+    float: left;
+    img, iframe {
+      width: auto;
+      margin: 0;
+      float: none;
+      height: auto;
+      width: auto;
+      max-width: 210px;
+      max-height: none;
+    }
+    ul {
+      a {
+        color: #000;
+        font-weight: 500;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.band-content {
+  display: block;
+  margin-top: 140px;
+  padding: 28px;
+  .concert-start {
+    padding: 1em 0;
+    border-bottom: 1px dashed $black;
+    p {
+      font-size: 1.2em;
+      margin: 0px;
+    }
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  header {
+    position: relative;
+    span {
+      position: relative;
+      font-size: 0.7em;
+      font-weight: 500;
+      vertical-align: top;
+      color: $black;
+    }
+    h1 {
+      position: relative;
+      font-size: 3.2rem;
+      font-weight: bold;
+      padding: 0px;
+      display: block;
+      color: $black;
+      font-weight: bold;
+    }
+    h2 {
+      position: relative;
+      display: block;
+      margin: 3px 0 0 0;
+      font-weight: 300;
+      left: auto;
+      color: $black;
+      font-size: 1em;
+      width: auto;
+      padding-bottom: 1.4em;
+      border-bottom: 1px solid $black;
+    }
+  }
+}
+
+@include MQ(M) {
+  .band-content {
+    display: block;
+    margin-top: 0px;
+    padding: 0px;
+    header {
+        h1 {
+          font-size: 2.4rem;
+          display: inline-block;
+          left: auto;
+          width: auto;
+          margin: 0;
+        }
+    }
+  }
+}
+
+@include MQ(M) {
+  .band-content {
+    position: relative;
+    float: right;
+    width: 550px;
+    height: 100%;
+    padding: 140px 0px 100px 110px;
+    overflow: hidden;
+    .scrollbox {
+      max-height: 100%;
+      overflow: auto;
+    }
+    .content {
+      padding-right: 10px;
+    }
+  }
+}
