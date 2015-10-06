@@ -71,8 +71,11 @@ table {
     .small-top {
       color: $white;
     }
-    a {
+    .cd-modal-action a.btn {
       font-size: 1em;
+    }
+    .cd-modal p {
+      color: $black;
     }
   }
 }

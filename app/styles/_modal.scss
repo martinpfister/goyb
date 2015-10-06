@@ -55,13 +55,12 @@ https://codyhouse.co/demo/morphing-modal-window/index.html#0
 
   .btn, .cd-modal-bg {
     display: inline-block;
-    height: 2em;
+    height: 1em;
   }
 
   .btn {
     text-transform: uppercase;
     color: #fff;
-    line-height: 2em;
     white-space: nowrap;
     text-decoration: underline;
     font-weight: 700;
@@ -72,7 +71,8 @@ https://codyhouse.co/demo/morphing-modal-window/index.html#0
     transition: color 0.2s 0.3s, width 0.3s 0s;
 
     &.to-circle {
-      width: 4em;
+      width: 2em;
+      height: 1em;
       color: $white;
       -webkit-transition: color 0.2s 0s, width 0.3s 0.2s;
       -moz-transition: color 0.2s 0s, width 0.3s 0.2s;
@@ -86,7 +86,8 @@ https://codyhouse.co/demo/morphing-modal-window/index.html#0
     z-index: 1;
     left: 50%;
     top: 0;
-    width: 4em;
+    width: 6em;
+    height: 6em;
     border-radius: 50%;
     opacity: 0;
     visibility: hidden;
