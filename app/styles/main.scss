@@ -44,11 +44,35 @@ body {
 a {
   color: $white;
   text-decoration: none;
+
+  &:hover,
+  &:active {
+    text-decoration: line-through;
+  }
 }
 p {
   margin: 2em 0;
   line-height: 1.6;
   color: $black;
-  font-weight: 300,;
+  font-weight: 300;
   @include font-smoothing;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin: 2em 0;
+  padding-left: 2em;
+}
+
+table {
+  td {
+    padding: 3px 10px 3px 0px;
+    .small-top {
+      color: $white;
+    }
+    a {
+      font-size: 1em;
+    }
+  }
 }

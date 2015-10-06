@@ -6,23 +6,8 @@ Logo
   height: 170px;
   width: 210px;
   position: absolute;
-  left: 28px;
-  margin-left: 0px;
   top: 0;
-}
-@include MQ(L) {
-  #logo {
-    z-index: 99;
-    height: 170px;
-    width: 210px;
-    position: absolute;
-    position: absolute;
-    left: 50%;
-    margin-left: -500px;
-    img {
-
-    }
-  }
+  left: 100px;
 }
 /* --------------------------------
 Header
@@ -132,6 +117,10 @@ Band Navigation
   }
   a {
     line-height: 5em;
+    &:hover,
+    &:active {
+      text-decoration: line-through;
+    }
   }
 }
 @include MQ(M) {
