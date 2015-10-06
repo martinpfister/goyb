@@ -133,7 +133,8 @@ Band Navigation
     right: 0;
     margin: 270px 00% 0 10%;
     a {
-      line-height: 3em;
+      line-height: 1;
+      padding-bottom: 36px;
     }
   }
 
@@ -157,9 +158,6 @@ Band Navigation
     bottom: auto;
     margin-left: 220px;
     margin-top: 300px;
-    a {
-      line-height: 3em;
-    }
   }
 }
 
