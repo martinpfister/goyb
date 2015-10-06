@@ -6,6 +6,7 @@
 @import 'layout';
 @import 'bandcontent';
 @import 'navigation';
+@import 'content';
 
 /* --------------------------------
 Primary style
@@ -24,6 +25,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+
+  &.detail {
+    background: url(/images/background_detailseiten.jpg);
+  }
 
   &.overflow-hidden {
     /* used when modal is visible */
