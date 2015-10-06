@@ -110,7 +110,6 @@ header {
       position: relative;
       left: auto;
       margin: 10px;
-      width: 100%;
       padding: 28px 14px;
     }
     h1 {
@@ -155,7 +154,6 @@ Band Navigation
     position: relative;
     left: auto;
     margin: 10px;
-    width: 100%;
     padding: 28px 14px;
     bottom: 0;
   }
@@ -212,7 +210,7 @@ footer {
   span#copyright {
     float: left;
     padding-top: 50px;
-    color: #ddd;
+    color: grey;
     line-height: 1.4;
   }
 }
