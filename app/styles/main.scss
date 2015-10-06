@@ -20,14 +20,14 @@ body {
   font-family: $primary-font;
   color: $white;
 
-  background: url(../images/background_landingpage_mobile.jpg);
+  background-image: url(../images/background_landingpage_mobile.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 
   &.detail {
-    background: url(/images/background_detailseiten.jpg);
+    background-image: url(/images/background_detailseiten.jpg);
   }
 
   &.overflow-hidden {
