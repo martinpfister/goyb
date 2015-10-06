@@ -60,7 +60,7 @@
 		text-decoration: underline;
 		font-weight: bold;
 
-		&:hover {
+		&:hover, &.active {
 			text-decoration: line-through;
 		}
 	}

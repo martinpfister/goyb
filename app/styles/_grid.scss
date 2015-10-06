@@ -66,3 +66,52 @@ Modules - reusable parts of our design
     }
   }
 }
+
+// Custom, bootstrap-like grid
+.container {
+  max-width: 900px;
+  padding-right: $grid-size;
+  padding-left: $grid-size;
+  margin: 20vh auto 0;
+}
+
+.row {
+  margin-right: -1 * $grid-size;
+  margin-left: -1 * $grid-size;
+  @include clearfix();
+
+  @media (max-width: 767px) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.main-col {
+  float: left;
+  width: 65%;
+  padding-right: $grid-size;
+  padding-left: $grid-size;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: $grid-size;
+    margin-bottom: $grid-size;
+  }
+}
+
+.aside-col {
+  float: left;
+  width: 35%;
+  padding-right: $grid-size;
+  padding-left: $grid-size;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: $grid-size;
+    margin-bottom: $grid-size;
+  }
+}
