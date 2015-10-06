@@ -56,12 +56,6 @@ https://codyhouse.co/demo/morphing-modal-window/index.html#0
   .btn, .cd-modal-bg {
     display: inline-block;
     height: 2em;
-
-    &:hover {
-    }
-    &:active {
-      background: $white;
-    }
   }
 
   .btn {
@@ -128,7 +122,7 @@ https://codyhouse.co/demo/morphing-modal-window/index.html#0
   width: 50px;
   border-radius: 50%;
 
-  background: rgba(#000, .3) url(../images/cd-icon-close.svg) no-repeat center center;
+  background: url(../images/cd-icon-close_black.svg) no-repeat center center;
 
   /* image replacement */
   overflow: hidden;
@@ -150,10 +144,6 @@ https://codyhouse.co/demo/morphing-modal-window/index.html#0
   -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
   -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
   transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
-
-  .no-touch &:hover {
-    background-color: rgba(#000, .5);
-  }
 
   .modal-is-visible & {
     visibility: visible;

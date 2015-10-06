@@ -105,12 +105,11 @@ header {
     }
   }
 
-  @media screen and (max-width : 420px)  {
+  @media screen and (max-width : 480px)  {
     h1, h2 {
       position: relative;
       left: auto;
       margin: 10px;
-      width: 100%;
       padding: 28px 14px;
     }
     h1 {
@@ -150,12 +149,11 @@ Band Navigation
   }
 
 }
-@media screen and (max-width : 420px)  {
+@media screen and (max-width : 480px)  {
   #bandinfo {
     position: relative;
     left: auto;
     margin: 10px;
-    width: 100%;
     padding: 28px 14px;
     bottom: 0;
   }
@@ -187,9 +185,13 @@ footer {
   background: #000;
   z-index: 100;
   color: #fff;
+  padding-top: 35px;
+  @include clearfix();
 
   ul {
     float: right;
+    @include clearfix();
+
     li {
       float: left;
     }
@@ -198,21 +200,25 @@ footer {
     text-transform: uppercase;
     text-decoration: underline;
     color: #fff;
-    padding: 30px 25px 0;
+    padding: 0 30px;
     display: block;
     height: 100%;
+
     strong {
       font-weight: bold;
       display: block;
     }
+
     span {
       color: #ccc;
+      white-space: nowrap;
     }
   }
+
   span#copyright {
     float: left;
-    padding-top: 50px;
-    color: #ddd;
+    padding-top: 20px;
+    color: grey;
     line-height: 1.4;
   }
 }
@@ -220,22 +226,30 @@ footer {
 @include MQ(M) {
   footer {
     font-size: 0.9em;
-    a {
-      line-height: 1.4;
-      padding: 30px 30px 0px;
-    }
   }
 }
 @include MQ(L) {
   footer {
     font-size: 1.0em;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    font-size: 0.9em;
+    ul {
+      float: none;
+    }
     a {
-      line-height: 1.4;
-      padding: 30px 50px 0;
+      padding: 0 10px;
+    }
+    span#copyright {
+      float: none;
+      display: block;
+      padding: 10px;
     }
   }
 }
-@media screen and (max-width : 420px)  {
+@media screen and (max-width : 480px)  {
   footer {
     position: relative;
     left: auto;
@@ -243,18 +257,27 @@ footer {
     height: auto;
     padding: 14px;
     bottom: 0;
-    span#copyright {
-      padding: 0;
-      padding: 14px;
-    }
-    a {
-      padding: 14px;
-    }
     ul {
+      float: none;
       li {
         display: list-item;
         float: none;
+        margin: 20px 0;
       }
     }
+
+    a {
+      padding: 0;
+    }
   }
+}
+
+.facebook-link {
+  position: relative;
+  padding-left: 35px;
+}
+.facebook-image {
+  position: absolute;
+  left: 0;
+  height: 100%;
 }
