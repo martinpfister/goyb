@@ -84,10 +84,15 @@ jQuery(document).ready(function($){
 		if(section.parents('.no-csstransitions').length > 0 ) animateLayer(section.find('.cd-modal-bg'), 1, false);
 	}
 
+	/**
+	 * Toggle the offcanvas navigation
+	 * @param  {Object} event Event
+	 */
 	function toggleNavigation (event) {
 		event.preventDefault();
 		$('#navigation').toggleClass('active');
 	}
 
+	// Register event handler to toggle the navi
 	$(document).on('click', '[data-toggle-navigation]', toggleNavigation);
 });
