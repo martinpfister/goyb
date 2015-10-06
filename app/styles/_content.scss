@@ -49,3 +49,24 @@
 		margin: 5px 0;
 	}
 }
+
+.terre-des-hommes {
+	position: absolute;
+	bottom: 120px;
+	right: 100px;
+
+	@media (max-width: 480px) {
+		position: static;
+		margin: 50px 20px;
+	}
+
+	span {
+		display: block;
+		text-transform: uppercase;
+		margin: 10px 0;
+	}
+
+	img {
+		display: block;
+	}
+}
