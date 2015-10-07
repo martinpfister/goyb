@@ -28,6 +28,13 @@ $L:     1170px;
 /* --------------------------------
 Modules - reusable parts of our design
 -------------------------------- */
+.small-top {
+  position: relative;
+  font-size: 0.7em;
+  font-weight: 500;
+  vertical-align: top;
+  color: $black;
+}
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
