@@ -12,6 +12,9 @@ Logo
 /* --------------------------------
 Header
 -------------------------------- */
+a {
+  text-decoration: underline;
+}
 header {
   position: relative;
 
@@ -24,7 +27,6 @@ header {
     padding-left: 40%;
     padding-right: 10%;
     padding-top: 14px;
-    text-decoration: underline;
     line-height: 1.4;
   }
 
@@ -38,7 +40,6 @@ header {
     padding-left: 28px;
     padding-right: 10%;
     padding-top: 14px;
-    text-decoration: underline;
     line-height: 1.4;
     margin-top: 100px;
   }
