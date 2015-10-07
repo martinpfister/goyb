@@ -42,6 +42,7 @@ header {
     padding-top: 14px;
     line-height: 1.4;
     margin-top: 100px;
+    margin-bottom: 120px;
   }
   @include MQ(M) {
     h1 {
@@ -87,6 +88,7 @@ header {
       width: 200px;
       margin-left:-420px;
       margin-top: 600px;
+      margin-bottom: 120px;
       padding: 0;
     }
   }
@@ -132,7 +134,7 @@ Band Navigation
     width: 230px;
     bottom: auto;
     right: 0;
-    margin: 270px 00% 0 10%;
+    margin: 270px 0 155px 10%;
     a {
       line-height: 1;
       padding-bottom: 36px;
@@ -159,6 +161,7 @@ Band Navigation
     bottom: auto;
     margin-left: 220px;
     margin-top: 300px;
+    margin-bottom: 120px;
   }
 }
 
