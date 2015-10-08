@@ -43,7 +43,6 @@ body {
 
 a {
   color: $white;
-  text-decoration: none;
 
   &:hover,
   &:active {
@@ -67,7 +66,7 @@ ol {
 
 table {
   td {
-    padding: 3px 10px 3px 0px;
+    padding: 5px 10px 5px 0px;
     .small-top {
       color: $white;
     }

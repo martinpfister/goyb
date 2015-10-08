@@ -5,13 +5,16 @@ Logo
   z-index: 99;
   height: 170px;
   width: 210px;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 100px;
+  left: 50px;
 }
 /* --------------------------------
 Header
 -------------------------------- */
+a {
+  text-decoration: underline;
+}
 header {
   position: relative;
 
@@ -24,7 +27,6 @@ header {
     padding-left: 40%;
     padding-right: 10%;
     padding-top: 14px;
-    text-decoration: underline;
     line-height: 1.4;
   }
 
@@ -38,9 +40,9 @@ header {
     padding-left: 28px;
     padding-right: 10%;
     padding-top: 14px;
-    text-decoration: underline;
     line-height: 1.4;
     margin-top: 100px;
+    margin-bottom: 120px;
   }
   @include MQ(M) {
     h1 {
@@ -86,6 +88,7 @@ header {
       width: 200px;
       margin-left:-420px;
       margin-top: 600px;
+      margin-bottom: 120px;
       padding: 0;
     }
   }
@@ -131,7 +134,7 @@ Band Navigation
     width: 230px;
     bottom: auto;
     right: 0;
-    margin: 270px 00% 0 10%;
+    margin: 270px 0 155px 10%;
     a {
       line-height: 1;
       padding-bottom: 36px;
@@ -158,6 +161,7 @@ Band Navigation
     bottom: auto;
     margin-left: 220px;
     margin-top: 300px;
+    margin-bottom: 120px;
   }
 }
 

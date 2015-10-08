@@ -18,6 +18,11 @@
 	}
 }
 
+.burger {
+	position: fixed;
+	z-index: 1;
+}
+
 /* Der Slider */
 #navigation{
 	position: fixed;
